@@ -1,0 +1,22 @@
+<div class="filter">
+	<label for="month">Month</label>
+	<select [ngModel]="month" id="month" (change)="month=$event.target.value">
+		<option [value]="0">January</option>
+		<option [value]="1">Febrary</option>
+		<option [value]="2">March</option>
+		<option [value]="3">April</option>
+		<option [value]="4">May</option>
+		<option [value]="5">June</option>
+		<option [value]="6">July</option>
+		<option [value]="7">August</option>
+		<option [value]="8">September</option>
+		<option [value]="9">October</option>
+		<option [value]="10">November</option>
+		<option [value]="11">December</option>
+	</select>
+	<label for="year">Year</label>
+	<select [ngModel]="year" id="year" (change)="year=$event.target.value">
+		<option [value]="2015">2015</option>
+		<option [value]="2016">2016</option>
+	</select>
+</div>

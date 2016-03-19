@@ -1,0 +1,4 @@
+/node_modules
+/wwwroot/*
+.vscode
+/*.log
