@@ -1,15 +1,2 @@
-<filter-panel [(year)]="selectedYear" [(month)]="selectedMonth" (change)="onChange()"></filter-panel>
-<div>
-	<div class="day-header">Sun</div>
-	<div class="day-header">Mon</div>
-	<div class="day-header">Tue</div>
-	<div class="day-header">Wed</div>
-	<div class="day-header">Thu</div>
-	<div class="day-header">Fri</div>
-	<div class="day-header">Sat</div>
-</div>
-<line [offset]="getOffset()" [from]="1" [to]="7-getOffset()"></line>
-<line [from]="getFrom(0)" [to]="getTo(0)"></line>
-<line [from]="getFrom(1)" [to]="getTo(1)"></line>
-<line [from]="getFrom(2)" [to]="getTo(2)"></line>
-<line [from]="getFrom(3)" [to]="getLastDay()"></line>
+<filter-panel [filter]="filter"></filter-panel>
+<month-panel [year]="filter.year" [month]="filter.month"></month-panel>

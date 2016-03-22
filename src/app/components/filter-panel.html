@@ -1,6 +1,6 @@
 <div class="filter">
 	<label for="month">Month</label>
-	<select [ngModel]="month" id="month" (change)="month=$event.target.value">
+	<select [ngModel]="filter.month" id="month">
 		<option [value]="0">January</option>
 		<option [value]="1">Febrary</option>
 		<option [value]="2">March</option>
@@ -15,7 +15,7 @@
 		<option [value]="11">December</option>
 	</select>
 	<label for="year">Year</label>
-	<select [ngModel]="year" id="year" (change)="year=$event.target.value">
+	<select [ngModel]="filter.year" id="year">
 		<option [value]="2015">2015</option>
 		<option [value]="2016">2016</option>
 	</select>

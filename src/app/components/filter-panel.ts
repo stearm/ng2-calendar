@@ -1,5 +1,6 @@
 import {Component,Input} from 'angular2/core';
 import {Month} from '../models/month';
+import {IFilter} from '../models/ifilter';
 
 @Component({
 	selector: 'filter-panel',
@@ -7,7 +8,6 @@ import {Month} from '../models/month';
 })
 export class FilterPanel{
 	
-	@Input() year: number;
-	@Input() month: Month;
+	@Input() filter: IFilter;
 	
 }
