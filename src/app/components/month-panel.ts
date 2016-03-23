@@ -1,6 +1,7 @@
 import {Component,Input} from 'angular2/core';
 import {Line} from '../components/line';
 import {Month} from '../models/month';
+import {IFilter} from '../models/ifilter';
 
 @Component({
 	selector: 'month-panel',
@@ -9,16 +10,10 @@ import {Month} from '../models/month';
 })
 export class MonthPanel {
 
-	@Input() selectedMonth: Month;
-	@Input() selectedYear: number;
-	
-	constructor(){
-		this.selectedMonth = moment().month();
-		this.selectedYear = moment().year();
-	}
+	@Input() filter: IFilter;
 
 	getOffset(){
-		return moment().year(this.selectedYear).month(this.selectedMonth).date(1).day();
+		return moment().year(this.filter.year).month(this.filter.month).date(1).day();
 	}
 	
 	getFrom(index:number){
@@ -30,7 +25,7 @@ export class MonthPanel {
 	}
 	
 	getLastDay(){
-		return moment().year(this.selectedYear).month(this.selectedMonth).endOf('month').date();
+		return moment().year(this.filter.year).month(this.filter.month).endOf('month').date();
 	}
 
 }
