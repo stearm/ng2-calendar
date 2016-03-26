@@ -1,4 +1,4 @@
-import {Month} from '../models/month';
+import {Month} from '../models/month'
 
 export interface IFilter {
 	month: Month,

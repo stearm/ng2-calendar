@@ -1,5 +1,5 @@
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .line {
@@ -8,7 +8,6 @@ body {
 
 .day {
 	border-style: solid;
-	border-color: black;
 	border-width: 1px 1px 1px 1px;
 	margin-left: 2px;
 	height: 50px;

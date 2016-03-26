@@ -1,8 +1,8 @@
-import {Component,Input} from 'angular2/core';
-import {Line} from '../components/line';
-import {Month} from '../models/month';
-import {IFilter} from '../models/ifilter';
-import {CalendarService} from '../services/calendar-service';
+import {Component,Input} from 'angular2/core'
+import {Line} from '../components/line'
+import {Month} from '../models/month'
+import {IFilter} from '../models/ifilter'
+import {CalendarService} from '../services/calendar-service'
 
 @Component({
 	selector: 'month-panel',

@@ -1,5 +1,5 @@
-import {Component,Input,OnChanges} from 'angular2/core';
-import {Day} from '../components/day';
+import {Component,Input,OnChanges} from 'angular2/core'
+import {Day} from '../components/day'
 
 @Component({
 	selector: 'line',

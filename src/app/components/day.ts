@@ -1,5 +1,5 @@
-import {Component,Input} from 'angular2/core';
-import {IEvent} from '../models/ievent';
+import {Component,Input} from 'angular2/core'
+import {EventService} from '../services/event-service'
 
 @Component({
 	selector: 'day',
@@ -8,6 +8,7 @@ import {IEvent} from '../models/ievent';
 export class Day {
 	
 	@Input() day: number;
-	@Input() events: Array<IEvent>;
+	
+	constructor(private eventService: EventService) { }
 		
 }

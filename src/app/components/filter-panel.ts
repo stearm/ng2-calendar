@@ -1,6 +1,6 @@
-import {Component,Input} from 'angular2/core';
-import {Month} from '../models/month';
-import {IFilter} from '../models/ifilter';
+import {Component,Input} from 'angular2/core'
+import {Month} from '../models/month'
+import {IFilter} from '../models/ifilter'
 
 @Component({
 	selector: 'filter-panel',
