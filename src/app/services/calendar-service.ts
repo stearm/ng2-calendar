@@ -11,7 +11,7 @@ export class CalendarService {
 		"year": moment().year()
 	};
 	
-	getLines() : Array<ILine> {
+	getLines(): Array<ILine> {
 		let lines: Array<ILine> = [];
 		let linesCount = this.getLastDay() + this.getOffset();
 		linesCount = Math.ceil(linesCount / 7);
@@ -29,20 +29,30 @@ export class CalendarService {
 		return lines;
 	}
 
-	private getFrom(index: number) {
+	private getFrom(index: number): number{
 		return 8 - (this.getOffset()) + (index * 7);
 	}
 
-	private getTo(index: number) {
+	private getTo(index: number): number {
 		return 14 - (this.getOffset()) + (index * 7);
 	}
 
-	private getOffset() {
+	private getOffset(): number {
 		return moment().year(this.filter.year).month(this.filter.month).date(1).day();
 	}
 
-	private getLastDay() {
+	private getLastDay(): number {
 		return moment().year(this.filter.year).month(this.filter.month).endOf('month').date();
+	}
+	
+	private getLastDayPreviousMonth() {
+		let year = this.filter.year;
+		let month = this.filter.month - 1;
+		if(this.filter.month == 0){
+			year--;
+			month = 11;
+		}
+		return moment().year(year).month(month).endOf('month').date();
 	}
 
 }
