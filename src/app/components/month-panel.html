@@ -1,10 +1,12 @@
-<div>
-	<div class="day-header">Sun</div>
-	<div class="day-header">Mon</div>
-	<div class="day-header">Tue</div>
-	<div class="day-header">Wed</div>
-	<div class="day-header">Thu</div>
-	<div class="day-header">Fri</div>
-	<div class="day-header">Sat</div>
+<div class="month">
+	<div>
+		<div class="day-header">Sun</div>
+		<div class="day-header">Mon</div>
+		<div class="day-header">Tue</div>
+		<div class="day-header">Wed</div>
+		<div class="day-header">Thu</div>
+		<div class="day-header">Fri</div>
+		<div class="day-header">Sat</div>
+	</div>
+	<line *ngFor="#line of calendarService.getLines()" [offset]="line.offset" [from]="line.from" [to]="line.to"></line>
 </div>
-<line *ngFor="#line of calendarService.getLines()" [offset]="line.offset" [from]="line.from" [to]="line.to"></line>
