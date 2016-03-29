@@ -4,20 +4,20 @@ body {
 
 .filter {
 	text-align: center;
-	background: #054657;
+	background: #C2363B;
 	padding: 2px 0px;
 }
 
 input[type="text"],select{
-    border: 1px solid #6DB99A;
+    border: 1px solid #C2363B;
     border-radius: 3px;
     padding: 6px 6px;
-		background: #054657;
+		background: #C2363B;
 		color: #E3AB5C;
 		font-family: 'Montserrat', sans-serif;
 }
 
-.month {
+.calendar {
 	background: #F5E4CA;
 	display: inline-block;
 }
@@ -39,6 +39,7 @@ input[type="text"],select{
 
 .day-header {
 	width: 50px;
+	padding-top: 2px;
 	text-align: center;
 	display: inline-block;
 	font-weight: bold;

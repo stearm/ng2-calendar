@@ -6,7 +6,7 @@ import {CalendarService} from '../services/calendar-service'
 @Component({
 	selector: 'calendar',
 	templateUrl: './app/components/calendar.html',
-	directives: [FilterPanel, MonthPanel]
+	directives: [MonthPanel]
 })
 export class Calendar {
 	
