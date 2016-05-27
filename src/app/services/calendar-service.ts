@@ -29,7 +29,7 @@ export class CalendarService {
 		return lines;
 	}
 
-	private getFrom(index: number): number{
+	private getFrom(index: number): number {
 		return 8 - (this.getOffset()) + (index * 7);
 	}
 

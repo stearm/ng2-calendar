@@ -59,4 +59,24 @@ line {
 	display: block;
 }
 
+.events {
+	display: inline-block;
+	vertical-align: top;
+	height: inherit;
+}
+
+.events.hide {
+	background-color:green;
+	left:0px;
+}
+
+.events.show {
+	background-color:#C2363B;
+}
+
+.events > ul {
+	list-style: none;
+}
+
+
 /* http://www.colourlovers.com/palette/4204125/Nursery_3 */
